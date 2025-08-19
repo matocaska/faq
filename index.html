@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<!-- <i class="bi bi-chevron-down"></i> -->
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+       
+        max-width: 60%;
+        height: 500px;
+        margin-top: 10%;
+        justify-content: center;
+        margin-left: 10%;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
+       
+    }
+    .faq{
+        width: 40%;
+          align-items: center;
+        padding: 20px;
+        color: white;
+         max-height: 500px;
+         /* margin-left: 20%; */
+    }
+     .faq h1{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: 20%;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .faq h3{
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-left: ;
+    }
+    .faq p{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .filp{
+        width: 100%;
+        height: 77%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+         max-height: 500px;
+         gap: 20px;
+         margin-bottom: 20px;
+    }
+    button{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: transparent;
+        border: none;
+        color: #4f46e5;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        width: 100%;    
+
+        justify-content: space-between;
+    }
+    .panel{
+        display: none;
+        padding: 10px;
+        background-color: #f8f9ff;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .panele{
+        display: none;
+        padding: 10px;
+        background-color: #f8f9ff;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    /* repsonsive mobile */
+    @media (max-width: 768px) {
+        .container {
+            max-width: 70%;
+            margin-left: 5%;
+        }
+        .faq {
+            width: 100%;
+            text-align: center;
+        }
+        .filp {
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="faq">
+             <h1>FAqs</h1>
+             <h3>what is the  mentor and hhow wll help me</h3>
+             <p>Lorem ipsum dolor sit amet consectetur</p>
+             
+
+        </div>
+        <div class="filp">
+          <div>
+             <button class="toggle">
+              which is the best way to learn frontend mentor
+              <span class="up">
+                <i class="bi bi-chevron-down"></i>
+              </span>  
+            </button>
+            <div class="panele">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</p>
+
+            </div>
+            
+        </div>
+            
+            <div>
+             <button class="toggle">
+              which is the best way to learn frontend mentor
+              <span class="up">
+                <i class="bi bi-chevron-down"></i>
+              </span>  
+            </button>
+            <div class="panele">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</p>
+
+            </div>
+            
+        </div>
+          <div>
+             <button class="toggle">
+              which is the best way to learn frontend mentor
+              <span class="up">
+                <i class="bi bi-chevron-down"></i>
+              </span>  
+            </button>
+            <div class="panele">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</p>
+
+            </div>
+            
+        </div>
+          <div>
+             <button class="toggle">
+              which is the best way to learn frontend mentor
+              <span class="up">
+                <i class="bi bi-chevron-down"></i>
+              </span>  
+            </button>
+            <div class="panele">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</p>
+
+            </div>
+            
+        </div>
+
+          <div>
+             <button class="toggle">
+              which is the best way to learn frontend mentor
+              <span class="up">
+                <i class="bi bi-chevron-down"></i>
+              </span>  
+            </button>
+            <div class="panele">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</p>
+
+            </div>
+            
+        </div>
+          <div>
+             <button class="toggle">
+              which is the best way to learn frontend mentor
+              <span class="up">
+                <i class="bi bi-chevron-down"></i>
+              </span>  
+            </button>
+            <div class="panele">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corrupti.</p>
+
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+    // Toggle functionality for the FAQ itemsu
+
+
+    
+   
+    $(".toggle").click(function(){
+        $(this).next(".panel").slideToggle("slow");
+        $(this).find(".up").toggleClass("rotate");
+    });
+    $(".toggle").click(function(){
+        $(this).next(".panele").slideToggle("slow");
+        $(this).find(".up").toggleClass("rotate");
+    });
+    
+</script>
+</body>
+</html>
